@@ -279,24 +279,62 @@ margin-right:8px;}
 
 .sticky-top .nav li.nav-item{border-top:1px solid #e5e5e5; background:#f7f7f7; margin:0;}
 .nav-item .nav-link{display:inline-block; padding:0;}
-.nav-item span{position:relative; display:inline-block; padding:10px 0 10px 20px; width:40px; height:40px;}
+.nav-item span{position:relative; display:inline-block; padding:10px 0 10px 20px; width:40px; height:40px; cursor: pointer;}
 .nav-item span.no-icon{width:41px;}
 .sticky-top .nav li.nav-item a{padding:10px 0;}
 .sticky-top .nav li.nav-item li a{padding:10px 0;}
 .sticky-top .nav li li li{background:url(../images/circle.svg) no-repeat 40px 20px !important; background-size:8px !important; padding-left:30px;}
 .sticky-top .nav li li{background:url(../images/circle.svg) no-repeat 20px 20px !important; background-size:8px !important; padding-left:0px;}
 .sticky-top .nav li.no-icon{background:none !important;}
-.nav-item span::before {
-    /* symbol for "collapsed" panels */
+/* .nav-item span::before {
     font-family: 'FontAwesome';  
-    content: "\f107" !important;
+    content: "\f105" !important;
     float: left;
-	color:#42526e;
+	  color:#42526e;
 }
 
 .nav-item span.collapsed::before {
      font-family: 'FontAwesome';  
-     content: "\f105" !important;
+     content: "\f107" !important;
      float: left;
+} */
+
+.nav-item span.arrow{  
+  font-weight: bold;
 }
+.nav-item span.arrow[data-toggle].collapsed:before { 
+  font-family: 'FontAwesome';  
+  content: "\f105" !important;
+  float: left;
+  color:#42526e;
+}
+.nav-item span.arrow[data-toggle]:not(.collapsed):before {
+
+  font-family: 'FontAwesome';  
+  content: "\f107" !important;
+  float: left;
+}
+
+.nav-item span.arrow:hover:before{  
+  color:#0fa0ce !important;
+}
+
+ 
+
+
+/* 
+.nav-link[data-toggle].collapsed:before {
+ 
+    font-family: 'FontAwesome';  
+    content: "\f105" !important;
+    float: left;
+	  color:#42526e;
+}
+.nav-link[data-toggle]:not(.collapsed):before {
+  
+  font-family: 'FontAwesome';  
+  content: "\f107" !important;
+  float: left;
+} */
+
 .nav-item span.no-icon:before{display:none;}
