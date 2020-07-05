@@ -281,7 +281,7 @@ margin-right:8px;}
 .nav-item .nav-link{display:inline-block; padding:0;}
 .nav-item span{position:relative; display:inline-block; padding:10px 0 10px 20px; width:40px; height:40px; cursor: pointer;}
 .nav-item span.no-icon{width:41px;}
-.sticky-top .nav li.nav-item a{padding:10px 0;}
+.sticky-top .nav li.nav-item a{padding:10px 0; color: #1180c3;}
 .sticky-top .nav li.nav-item li a{padding:10px 0;}
 .sticky-top .nav li li li{background:url(../images/circle.svg) no-repeat 40px 20px !important; background-size:8px !important; padding-left:30px;}
 .sticky-top .nav li li{background:url(../images/circle.svg) no-repeat 20px 20px !important; background-size:8px !important; padding-left:0px;}
